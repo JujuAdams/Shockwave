@@ -27,6 +27,7 @@ if ( global.shockwave_batch && ( instance_number( oShockwave ) > 0 ) )
     var _vbuff = vbf_shockwave;
     
     //Because with() iterates from newest to oldest, and we want to go oldest to newest, then we have to build an array
+    //This is admittedly a matter of taste - sometimes you may want to stick with GM's native behaviour
     var _shockwaves = array_create( instance_number( oShockwave ) );
     var _i = 0;
     with( oShockwave ) _shockwaves[_i++] = id;
