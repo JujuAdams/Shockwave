@@ -81,7 +81,7 @@
         {
             "Key": "3a5af38c-757d-41ae-98c0-5d4b09e14e6a",
             "Value": {
-                "id": "58d6c73a-5519-4248-922f-078beaf742d8",
+                "id": "74c866d8-a123-446c-957c-e3cc761e1ad6",
                 "resourcePath": "options\\switch\\options_switch.yy",
                 "resourceType": "GMSwitchOptions"
             }
@@ -89,7 +89,7 @@
         {
             "Key": "3a5af38c-757d-44ae-98c0-5d4b09e14e6a",
             "Value": {
-                "id": "1b725c37-7d4d-48e0-90f6-06907e10cd04",
+                "id": "672a8aef-bafd-414e-98d6-afb707385e2a",
                 "resourcePath": "options\\ps4\\options_ps4.yy",
                 "resourceType": "GMPS4Options"
             }
