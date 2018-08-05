@@ -1,6 +1,9 @@
 //Smooth our fps_real
 fps_smoothed = lerp( fps_smoothed, fps_real, 0.02 );
 
+//Keyboard input
+if ( keyboard_check_pressed( vk_space ) ) global.shockwave_batch = !global.shockwave_batch;
+
 //Click to create shockwaves
 if ( mouse_check_button_pressed( mb_left ) ) instance_create_layer( mouse_x, mouse_y, "Instances", oShockwave );
 if ( mouse_check_button( mb_right ) ) instance_create_layer( mouse_x, mouse_y, "Instances", oShockwave );
@@ -9,9 +12,7 @@ if ( mouse_check_button_pressed( mb_middle ) )
     repeat( 20 ) instance_create_layer( mouse_x + random_range( -300, 300 ), mouse_y + random_range( -300, 300 ), "Instances", oShockwave );
 }
 
-if ( keyboard_check_pressed( vk_space ) ) global.shockwave_batch = !global.shockwave_batch;
-
-//Regardless of whether we're in batch mode, we want to discard the shockwave vertex buffer
+//Regardless of whether we're in batch mode, we want to discard the shockwave vertex buffer every frame
 if ( vbf_shockwave != noone )
 {
     vertex_delete_buffer( vbf_shockwave );
