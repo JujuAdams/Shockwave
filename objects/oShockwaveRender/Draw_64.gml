@@ -6,6 +6,6 @@ Right click: Stream shockwaves
 Enter: See shockwave surface
 Space: Switch batch mode on/off" );
 
-draw_text( 870, 10, (global.shockwave_batch ? "Using one batch" : "Using multiple batches") + @"
+draw_text( 870, 10, (global.shockwave_batch ? "One batch" : "Multiple batches") + @"
 FPS: " + string( fps ) + "/" + string( fps_smoothed ) + @"
 Instances: " + string( instance_count ) );

@@ -25,14 +25,22 @@ if ( instance_number( oShockwave ) > 0 )
     {
         //Iterate over every shockwave and draw them
         shader_set( shdShockwave );
-        with( oShockwave )
+        //Because with() iterates from newest to oldest, and we want to go oldest to newest, then we have to build an array
+        var _shockwaves = array_create( instance_number( oShockwave ) );
+        var _i = 0;
+        with( oShockwave ) _shockwaves[_i++] = id;
+    
+        for( var _i = instance_number( oShockwave )-1; _i >= 0; _i-- )
         {
-            draw_set_alpha( alpha );
-            shader_set_uniform_f( shader_get_uniform( shader_current(), "u_vCentre"    ), x, y );
-            shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fMaxRadius" ), max_radius );
-            shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fMinRadius" ), min_radius );
-            shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fExponent"  ), exponent );
-            draw_rectangle( x - max_radius, y - max_radius, x + max_radius, y + max_radius, false );
+            with( _shockwaves[_i] )
+            {
+                draw_set_alpha( alpha );
+                shader_set_uniform_f( shader_get_uniform( shader_current(), "u_vCentre"    ), x, y );
+                shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fMaxRadius" ), max_radius );
+                shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fMinRadius" ), min_radius );
+                shader_set_uniform_f( shader_get_uniform( shader_current(), "u_fExponent"  ), exponent );
+                draw_rectangle( x - max_radius, y - max_radius, x + max_radius, y + max_radius, false );
+            }
         }
         draw_set_alpha( 1 );
         shader_reset();
