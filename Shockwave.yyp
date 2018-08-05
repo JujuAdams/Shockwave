@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "14dbfea6-a6c2-40ba-a611-360929247399",
+            "Value": {
+                "id": "e8426d7b-f089-4521-9ec4-93ef217c1981",
+                "resourcePath": "paths\\pthInfinity\\pthInfinity.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "29c40bb9-50f3-476c-97e8-128778c87405",
             "Value": {
                 "id": "d73b48d5-2010-48a8-93f4-a5e4872e8aa5",
@@ -60,6 +68,14 @@
                 "id": "9224e140-07f0-4fd8-83f5-fad0e06ee63f",
                 "resourcePath": "views\\2c68ff68-019d-45f6-b036-abe1ecbe4de9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "34ce14ba-4107-4d97-a71d-655977e4bb20",
+            "Value": {
+                "id": "39fe603a-ed11-4287-b1e9-81a607f391db",
+                "resourcePath": "shaders\\shdShockwaveBatch\\shdShockwaveBatch.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -252,6 +268,14 @@
                 "id": "694c6f5b-1446-4363-9e59-55615696610d",
                 "resourcePath": "sprites\\sStars\\sStars.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e29e60cd-8ebf-4323-810d-d406cef697a1",
+            "Value": {
+                "id": "2ceb6990-afcd-492f-9d71-030d116055e0",
+                "resourcePath": "objects\\oInfinity\\oInfinity.yy",
+                "resourceType": "GMObject"
             }
         },
         {
