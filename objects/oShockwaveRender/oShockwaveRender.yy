@@ -5,16 +5,6 @@
     "name": "oShockwaveRender",
     "eventList": [
         {
-            "id": "fad63fa1-c534-4a37-83bf-0bb021d5fdc0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "29c40bb9-50f3-476c-97e8-128778c87405"
-        },
-        {
             "id": "dc087882-6b59-4d4a-8523-1847e38a5ee5",
             "modelName": "GMEvent",
             "mvc": "1.0",

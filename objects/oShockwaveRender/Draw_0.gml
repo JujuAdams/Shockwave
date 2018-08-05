@@ -1,1 +1,0 @@
-draw_sprite( sSource, 0, 0, 0 );

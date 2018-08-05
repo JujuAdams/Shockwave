@@ -1,11 +1,13 @@
-if ( !surface_exists( surface ) )
-{
-    surface = surface_create( surface_get_width( application_surface ), surface_get_height( application_surface ) );
-}
+//Reconstruct our shockwave surface if it doesn't exist
+if ( !surface_exists( surface ) ) surface = surface_create( surface_get_width( application_surface ), surface_get_height( application_surface ) );
 
+//Build our shockwave surface
 surface_set_target( surface );
+
+//Clear the entire surface
 draw_clear( make_colour_rgb( 127, 127, 0 ) );
 
+//Iterate over every shockwave and draw them
 shader_set( shdShockwave );
 with( oShockwave )
 {
